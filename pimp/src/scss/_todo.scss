@@ -1,14 +1,9 @@
-// using one highlight color in case of change
-$highlight: $clouds;
-// same for bg color
-$bg_col: $wet-asphalt;
-// a common border size
-$border_size: 5px;
-$margin_size: 10px;
-
-
 .button-add-new-todo {
   color: white;
   margin: auto;
   border-color: white;
+}
+
+.todo-input {
+  margin: $margin-size;
 }

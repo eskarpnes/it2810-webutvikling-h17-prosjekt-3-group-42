@@ -89,7 +89,7 @@ class TodoContainer extends Component {
       <div className='Todo'>
         <div className = 'group'>
           <form onSubmit={this.handleSubmit}>
-            <input className='input'
+            <input className='todo-input input'
               type='text'
               required
               name='title'
