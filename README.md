@@ -2,9 +2,9 @@
 ```
 Personal Information Manager PRO
 ```
-PIMp(Personal Information Manager PRO) is a single-page app that lets you personal manage you information. 
+PIMP is a single-page app that lets you personal manage personal information.
 
-The app contains a personal calendar that allows you to keep track of appointments and shows a easy and graphical view of which days you are free and not. You can add your own notes and separate todo list is also implemented so that you can control the tasks you are going to do.
+The app contains a personal calendar that allows you to keep track of appointments and highlights days with active events. You can add your own notes and todos, all of which are stored for later use. Notes are shown by "X minutes/hours/days/months ago" after the last update.
 
 To see the  documentation for the React Native app, please read the readme in ```./pimp-mobile/```
 
@@ -19,6 +19,12 @@ To run ESLint:
 $ ./node_modules/.bin/eslint path/to/file
 ```
 append ```--fix``` to let ESLint fix possible simple errors
+
+Publishing:
+```
+// package.json
+start: webpack-dev-server --host 0.0.0.0 --public http://it2810-42.idi.ntnu.no:8083
+```
 
 
 ## Creating a new component
