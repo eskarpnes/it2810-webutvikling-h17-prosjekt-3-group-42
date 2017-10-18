@@ -23,15 +23,17 @@ class Note extends Component {
   }
 
   componentDidMount() {
-    // this.titleRef.focus()
+    // this.titleRef.focus() // optional
+    let editedAt = new Date()
     this.setState({
-      timestamp: timestampAt(new Date())
+      timestamp: timestampAt(editedAt)
     })
     // update the time every 10 seconds
     this.timer = setInterval(()=>this.tick(),10000)
   }
 
   componentWillUnMount() {
+    // avoid updating a timer if this component unmounts
     clearInterval(this.timer)
   }
 
@@ -73,17 +75,16 @@ class Note extends Component {
       'id': this.titleRef.value,
       'time': editedAt
     }
-    let LS = JSON.parse(
-      localStorage.getItem('notes'))
+    let LS = JSON.parse(localStorage.getItem('notes'))
     LS = removeId(LS, this.titleRef.value)
     LS.push(newNote)
-    localStorage.setItem('notes',
-      JSON.stringify(LS))
+    localStorage.setItem('notes', JSON.stringify(LS))
     this.setState({ lastChanged: editedAt, saved: true })
   }
 
 
   render() {
+    let oldNote = this.state.title.length > 0
     return (
       <div className='note'>
         <form className='note-form'
@@ -117,7 +118,7 @@ class Note extends Component {
           </div>
         </form>
         <div id='created-at'>
-          {this.state.saved?(
+          {oldNote?(
             timestampAt(this.state.lastChanged)
           ):(
             this.state.lastChanged
