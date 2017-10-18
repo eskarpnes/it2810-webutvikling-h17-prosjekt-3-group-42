@@ -2,6 +2,10 @@
 ```
 Personal Information Manager PRO
 ```
+PIMp is a single-page app that lets you personal manage you information. 
+
+The app contains a personal calendar that allows you to keep track of appointments and shows a easy and graphical view of which days you are free and not. You can add your own notes and separate todo list is also implemented so that you can control the tasks you are going to do.
+
 To see the  documentation for the React Native app, please read the readme in ```./pimp-mobile/```
 
 ## Get started
