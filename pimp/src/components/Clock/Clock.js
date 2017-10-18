@@ -3,6 +3,7 @@ import {Textfit} from 'react-textfit';
 import PropTypes from 'prop-types'; // ES6
 
 export class Clock extends Component {
+  
   render() {
     const weekday = this.props.weekday;
     const month = this.props.month;

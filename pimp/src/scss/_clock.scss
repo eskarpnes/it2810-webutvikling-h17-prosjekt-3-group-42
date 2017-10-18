@@ -1,10 +1,30 @@
 #clock {
-  position: fixed;
-  bottom: 5%;
-  left: 5%;
-  width: 200px;
+
+  display: flex;
+
+  @include s-small() {
+    flex-direction: row;
+    width: 40em;
+    padding: 20px 0;
+    justify-content: space-between;
+  }
+
+  @include s-large() {
+    flex-direction: column;
+    position: fixed;
+    bottom: 5em;
+    left: 5em;
+    width: 200px;
+    padding: 0;
+  }
 }
 
 .clock_element {
   margin: 0;
+}
+
+p {
+  @include s-small() {
+    font-size: xx-large;
+  }
 }

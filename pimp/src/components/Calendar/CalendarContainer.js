@@ -7,9 +7,8 @@ class CalendarContainer extends Component {
     super(props);
   }
   
-  // Makes a specific date green
-  // Can use this to mark event dates
-  // The date and month must be integers
+  // Makes a specific date green.
+  // Shows which event this is on hover.
   addEventOnDay(date, eventHover) {
     const buttons = document.getElementsByClassName(
       "react-calendar__month-view__days__day");
@@ -29,7 +28,8 @@ class CalendarContainer extends Component {
     }
   }
   
-  // Makes all the days transparent
+  // Makes all the days transparent.
+  // Set the text color to white on weekdays and green on weekend.
   deleteEvents() {
     const buttons = document.getElementsByClassName(
       "react-calendar__month-view__days__day");

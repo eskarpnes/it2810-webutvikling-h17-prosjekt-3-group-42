@@ -1,7 +1,6 @@
 #root{
-  display: block;
-  width: 70%;
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
 
 body{
@@ -9,26 +8,4 @@ body{
   color: $clouds;
   font-family: helvetica, sans-serif;
   padding: 0;
-  min-width: 400px;
 }
-
-#welcome {
-  text-align: center;
-  display: block;
-}
-
-.container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
-  flex-direction: row;
-  @include transition(all 1s ease);
-}
-
-.container-item {
-  @include transition(all 1s ease);
-  min-width: 100px;
-}
-
-

@@ -1,29 +1,11 @@
 @mixin s-large {
-  @media only screen and (max-width: 60em) {
-    @content;
-  }
-}
-
-@mixin s-medium {
-  @media only screen and (max-width: 40em) {
+  @media only screen and (min-width: 80em) {
     @content;
   }
 }
 
 @mixin s-small {
-  @media only screen and (max-width: 30em) {
+  @media only screen and (max-width: 80em) {
     @content;
   }
 }
-
-
-// usage:
-//
-// .someclass {
-//   ...variables
-//   @include s-small {
-//     width: 100%;
-//     float: none;
-//     margin: 0;
-//   }
-// }
