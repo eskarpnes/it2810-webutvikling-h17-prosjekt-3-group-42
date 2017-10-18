@@ -2,6 +2,7 @@
 ```
 Personal Information Manager PRO
 ```
+To see the  documentation for the React Native app, please read the readme in ```./pimp-mobile/```
 
 ## Get started
 ```
