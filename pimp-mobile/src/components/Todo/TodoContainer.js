@@ -74,7 +74,9 @@ class TodoContainer extends Component {
           >
             <View style={styles.delete_container}>
               <View style={[styles.delete_border, styles.turquoise_border]}>
-                <Text style={[styles.delete_text, styles.turquoise]}>✓</Text>
+                <Text style={[styles.delete_text, styles.turquoise]}>
+                  ✓
+                </Text>
               </View>
             </View>
           </TouchableNativeFeedback>
@@ -86,7 +88,9 @@ class TodoContainer extends Component {
     return(
       <View style={styles.box}>
         <View style={[styles.box_header, styles.turquoise_border]}>
-          <Text style={[styles.title, styles.turquoise]}>Your Todos</Text>
+          <Text style={[styles.title, styles.turquoise]}>
+            Your Todos
+          </Text>
         </View>
         <View style={[styles.box_body, styles.turquoise_border]}>
           {this.allTodos()}
@@ -111,7 +115,9 @@ class TodoContainer extends Component {
         >
           <View style={styles.box}>
             <View style={[styles.box_header, styles.turquoise_border]}>
-              <Text style={[styles.title, styles.turquoise]}>New todo</Text>
+              <Text style={[styles.title, styles.turquoise]}>
+                New todo
+              </Text>
             </View>
             <View style={[styles.box_body, styles.turquoise_border]}>
               <TextInput
@@ -135,11 +141,6 @@ class TodoContainer extends Component {
     )
   }
 }
-
-TodoContainer.propTypes = {
-
-}
-
 
 export default TodoContainer
 

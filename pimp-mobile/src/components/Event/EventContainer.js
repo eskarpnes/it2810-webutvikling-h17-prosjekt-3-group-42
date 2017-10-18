@@ -19,9 +19,6 @@ class EventContainer extends Component {
     };
   }
 
-  componentDidMount() {
-  }
-
   toggleModal() {
     this.setState((prevState) => {
       return {modalVisible: !prevState.modalVisible};
@@ -86,7 +83,9 @@ class EventContainer extends Component {
           >
             <View style={styles.delete_container}>
               <View style={[styles.delete_border, styles.emerald_border]}>
-                <Text style={[styles.delete_text, styles.emerald]}>x</Text>
+                <Text style={[styles.delete_text, styles.emerald]}>
+                  x
+                </Text>
               </View>
             </View>
           </TouchableNativeFeedback>
@@ -98,7 +97,9 @@ class EventContainer extends Component {
     return(
       <View style={styles.box}>
         <View style={[styles.box_header, styles.emerald_border]}>
-          <Text style={[styles.title, styles.emerald]}>Your Events</Text>
+          <Text style={[styles.title, styles.emerald]}>
+            Your Events
+          </Text>
         </View>
         <View style={[styles.box_body, styles.emerald_border]}>
           {this.allEvents()}
@@ -123,7 +124,9 @@ class EventContainer extends Component {
         >
           <View style={styles.box}>
             <View style={[styles.box_header, styles.emerald_border]}>
-              <Text style={[styles.title, styles.emerald]}>New event</Text>
+              <Text style={[styles.title, styles.emerald]}>
+                New event
+              </Text>
             </View>
             <View style={[styles.box_body, styles.emerald_border]}>
               <TextInput
@@ -177,11 +180,6 @@ class EventContainer extends Component {
     )
   }
 }
-
-EventContainer.propTypes = {
-
-}
-
 
 export default EventContainer
 

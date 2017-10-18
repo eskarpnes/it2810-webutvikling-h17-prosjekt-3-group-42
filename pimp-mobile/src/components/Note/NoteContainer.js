@@ -76,7 +76,9 @@ class NoteContainer extends Component {
           >
             <View style={styles.delete_container}>
               <View style={[styles.delete_border, styles.carrot_border]}>
-                <Text style={[styles.delete_text, styles.carrot]}>x</Text>
+                <Text style={[styles.delete_text, styles.carrot]}>
+                  x
+                </Text>
               </View>
             </View>
           </TouchableNativeFeedback>
@@ -88,7 +90,9 @@ class NoteContainer extends Component {
     return(
       <View style={styles.box}>
         <View style={[styles.box_header, styles.carrot_border]}>
-          <Text style={[styles.title, styles.carrot]}>Your Notes</Text>
+          <Text style={[styles.title, styles.carrot]}>
+            Your Notes
+          </Text>
         </View>
         <View style={[styles.box_body, styles.carrot_border]}>
           {this.allNotes()}
@@ -113,7 +117,9 @@ class NoteContainer extends Component {
         >
           <View style={styles.box}>
             <View style={[styles.box_header, styles.carrot_border]}>
-              <Text style={[styles.title, styles.carrot]}>New note</Text>
+              <Text style={[styles.title, styles.carrot]}>
+                New note
+              </Text>
             </View>
             <View style={[styles.box_body, styles.carrot_border]}>
               <TextInput
@@ -142,11 +148,6 @@ class NoteContainer extends Component {
     )
   }
 }
-
-NoteContainer.propTypes = {
-
-}
-
 
 export default NoteContainer
 
