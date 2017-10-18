@@ -48,7 +48,7 @@ class EventContainer extends Component {
     let LS = JSON.parse(
       localStorage.getItem('events'));
     let fromStorage = [];
-    if (LS && LS.length > 1){
+    if (LS){
       LS.map((event)=>{
         if (event['title']){
           let storageEvent =
@@ -71,16 +71,6 @@ class EventContainer extends Component {
       })
     }
     else {
-      let storageEvent =
-        <Event
-          id={99999}
-          key={moment("2017-10-19T10:00:05.000Z").valueOf()}
-          title="Evaluate our website plz"
-          text="😙 😚 😋 😜 😝 😛 🤑 🤗 🤓 😎 🤡 🤠 😏 😒 😞 😔 😟 😕 "
-          eventAt={moment("2017-10-19T10:00:05.000Z").format("dddd, MMMM Do, HH:mm")}
-          update={this.updateFromLS}
-        />;
-      fromStorage.push(storageEvent)
       localStorage.setItem('events', JSON.stringify(fromStorage))
     }
     this.setState({ events: fromStorage });
