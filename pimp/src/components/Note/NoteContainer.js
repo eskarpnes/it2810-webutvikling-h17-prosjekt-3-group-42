@@ -18,7 +18,7 @@ class NoteContainer extends Component {
     let LS = JSON.parse(
       localStorage.getItem('notes'))
     let fromStorage = new Array();
-    if (LS){
+    if (LS && LS.length > 1){
       LS.map((note)=>{
         if (note['text']){
           let storageNote =
@@ -32,6 +32,13 @@ class NoteContainer extends Component {
       })
     }
     else {
+      let defaultNote =
+        <Note
+          title='Default note'
+          text='Type some stuff here!'
+          lastChanged='2017-10-16T17:31:51.254Z'
+        />;
+      fromStorage.push(defaultNote)
       localStorage.setItem('notes',
         JSON.stringify(fromStorage))
     }

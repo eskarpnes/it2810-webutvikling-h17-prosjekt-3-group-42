@@ -11,6 +11,7 @@ class Home extends Component {
 
 
   render() {
+    localStorage.setItem('firstLoad', JSON.stringify(true))
     return (
       <div id="home">
         <ClockContainer />
