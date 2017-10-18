@@ -2,7 +2,7 @@
 ```
 Personal Information Manager PRO
 ```
-PIMp is a single-page app that lets you personal manage you information. 
+PIMp(Personal Information Manager PRO) is a single-page app that lets you personal manage you information. 
 
 The app contains a personal calendar that allows you to keep track of appointments and shows a easy and graphical view of which days you are free and not. You can add your own notes and separate todo list is also implemented so that you can control the tasks you are going to do.
 
