@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Clock component should render as expected 1`] = `
+<div
+  id="clock"
+>
+  <TextFit
+    autoResize={true}
+    forceSingleModeWidth={true}
+    max={100}
+    min={1}
+    mode="single"
+    onReady={[Function]}
+    throttle={50}
+  >
+    <p
+      className="clock_element"
+    />
+  </TextFit>
+  <TextFit
+    autoResize={true}
+    forceSingleModeWidth={true}
+    max={100}
+    min={1}
+    mode="single"
+    onReady={[Function]}
+    throttle={50}
+  >
+    <p
+      className="clock_element"
+    >
+       
+    </p>
+  </TextFit>
+  <TextFit
+    autoResize={true}
+    forceSingleModeWidth={true}
+    max={100}
+    min={1}
+    mode="single"
+    onReady={[Function]}
+    throttle={50}
+  >
+    <p
+      className="clock_element"
+    >
+      :
+      :
+    </p>
+  </TextFit>
+</div>
+`;

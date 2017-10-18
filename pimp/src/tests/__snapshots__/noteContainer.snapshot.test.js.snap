@@ -1,0 +1,114 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NoteContainer component renders the note correctly 1`] = `
+<div
+  className="container-item"
+  id="Notes"
+>
+  <div
+    className="box undefined"
+  >
+    <h2
+      id="box-title"
+    >
+      Your notes
+    </h2>
+    <hr />
+    <div
+      className="box-container"
+    />
+    <div
+      id="btn"
+    >
+      <button
+        onClick={[Function]}
+      >
+        New note
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`NoteContainer component renders the note correctly 2`] = `
+<div
+  className="container-item"
+  id="Notes"
+>
+  <div
+    className="box undefined"
+  >
+    <h2
+      id="box-title"
+    >
+      Your notes
+    </h2>
+    <hr />
+    <div
+      className="box-container"
+    >
+      <div
+        className="box-item"
+      >
+        <div
+          className="note"
+        >
+          <form
+            className="note-form"
+            onSubmit={[Function]}
+          >
+            <div
+              className="group"
+            >
+              <input
+                name="title"
+                onChange={[Function]}
+                placeholder="Title"
+                required={true}
+                type="text"
+                value=""
+              />
+              <input
+                type="submit"
+                value="submit"
+              />
+              <span
+                className="bar"
+              />
+            </div>
+            <div
+              className="group"
+            >
+              <input
+                name="content"
+                onChange={[Function]}
+                placeholder="Content"
+                required={true}
+                type="text"
+                value=""
+              />
+              <span
+                className="bar"
+              />
+            </div>
+          </form>
+          <div
+            id="created-at"
+          >
+            Press enter to save
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="btn"
+    >
+      <button
+        onClick={[Function]}
+      >
+        New note
+      </button>
+    </div>
+  </div>
+</div>
+`;

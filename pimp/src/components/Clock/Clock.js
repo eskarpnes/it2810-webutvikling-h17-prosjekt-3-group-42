@@ -34,3 +34,5 @@ Clock.propTypes = {
   seconds: PropTypes.string,
   day: PropTypes.number,
 }
+
+export default Clock;

@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Event component should render as expected 1`] = `
+<div
+  className="event"
+>
+  <h2 />
+  <p>
+    &gt; undefined
+  </p>
+  <div
+    id="event-at"
+  >
+    <hr />
+    <p>
+      The event is on 
+    </p>
+  </div>
+  <button
+    onClick={[Function]}
+  >
+    Delete
+  </button>
+</div>
+`;

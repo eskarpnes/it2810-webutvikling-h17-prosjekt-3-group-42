@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Note component should render as expected 1`] = `
+<div
+  className="note"
+>
+  <form
+    className="note-form"
+    onSubmit={[Function]}
+  >
+    <div
+      className="group"
+    >
+      <input
+        id="tittelid"
+        name="title"
+        onChange={[Function]}
+        placeholder="Title"
+        required={true}
+        type="text"
+      />
+      <input
+        id="submitid"
+        type="submit"
+        value="submit"
+      />
+      <span
+        className="bar"
+      />
+    </div>
+    <div
+      className="group"
+    >
+      <input
+        id="tekstid"
+        name="content"
+        onChange={[Function]}
+        placeholder="Content"
+        required={true}
+        type="text"
+      />
+      <span
+        className="bar"
+      />
+    </div>
+  </form>
+  <div
+    id="created-at"
+  />
+</div>
+`;

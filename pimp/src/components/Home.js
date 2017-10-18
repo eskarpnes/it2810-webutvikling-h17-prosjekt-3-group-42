@@ -8,8 +8,8 @@ class Home extends Component {
   constructor(props){
     super(props);
   }
-  
-  
+
+
   render() {
     return (
       <div id="home">
@@ -25,4 +25,3 @@ class Home extends Component {
 }
 
 export default Home;
-

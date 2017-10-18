@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CalendarContainer component should render as expected 1`] = `
+<Calendar
+  maxDetail="month"
+  minDetail="century"
+  returnValue="start"
+  showNavigation={true}
+  showNeighboringMonth={true}
+  view="month"
+/>
+`;
